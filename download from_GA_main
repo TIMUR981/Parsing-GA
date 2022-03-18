@@ -154,6 +154,3 @@ df['date']=pd.to_datetime(df['date'],format='%Y-%m-%d')
 
 
 
-engine = create_engine('postgresql://Timur:JbkdjfhyeWies@109.71.14.64:25900/analytic')
-df.to_sql('ga_report', engine, if_exists='append')
-
